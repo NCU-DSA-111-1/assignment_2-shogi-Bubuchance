@@ -1,1 +1,15 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9699058&assignment_repo_type=AssignmentRepo)
+# shogi
+
+>This Assignment is to use C to make a shogi game for two real players to play chess. 
+
+# Compile
+1. 下載libev
+    a. sudo apt-get update
+    b. sudo apt-get install libev-dev
+2. 編譯
+a. cd assignment_2-shogi-Bubuchance
+b. cd src
+c. gcc hw2.c -lev -o hw2
+# Run
+./hw2 [-n][- s newfile][-l oldfile]
+
