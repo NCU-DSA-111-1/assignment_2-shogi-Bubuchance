@@ -1,15 +1,144 @@
-# shogi
-
+# Shogi
+## Insruction
 >This Assignment is to use C to make a shogi game for two real players to play chess. 
 
-# Compile
-1. 下載libev
-    a. sudo apt-get update
-    b. sudo apt-get install libev-dev
-2. 編譯
-a. cd assignment_2-shogi-Bubuchance
-b. cd src
-c. gcc hw2.c -lev -o hw2
-# Run
-./hw2 [-n][- s newfile][-l oldfile]
 
+## Compile
+* Download libev
+    * sudo apt-get update
+    * sudo apt-get install libev-dev
+* compile
+    * cd assignment_2-shogi-Bubuchance
+    * cd src
+* gcc hw2.c -lev -o hw2
+## Run
+### Open a new game
+    ./hw2 [-n][-s newfile]
+### Reload old game file
+    ./hw2 [-s oldfile]
+## Example
+呈現棋盤目前狀態
+Now is 2023/01/10 22:13:35
+start game
+藍方時間：0 sec
+紅方時間：0 sec
+Turn B
+請輸入要移動的藍棋之row(0為悔棋):7  
+請輸入要移動的藍棋之yi:5
+請輸入要放置的位置(xj,yj):6 5
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:20:24
+藍方時間：9 sec
+紅方時間：0 sec
+Turn R
+請輸入要移動的紅棋之row(0為悔棋):3
+請輸入要移動的紅棋之col:5
+請輸入要放置的位置(row,col):4 5
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:21:06
+藍方時間：9 sec
+紅方時間：42 sec
+Turn B
+請輸入要移動的藍棋之row(0為悔棋):6
+請輸入要移動的藍棋之yi:5
+請輸入要放置的位置(xj,yj):5 5
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:22:14
+藍方時間：77 sec
+紅方時間：42 sec
+Turn R
+請輸入要移動的紅棋之row(0為悔棋):3  
+請輸入要移動的紅棋之col:1
+請輸入要放置的位置(row,col):4 1
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:22:41
+藍方時間：77 sec
+紅方時間：69 sec
+Turn B
+請輸入要移動的藍棋之row(0為悔棋):5
+請輸入要移動的藍棋之yi:5
+請輸入要放置的位置(xj,yj):4 5
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:23:07
+藍方時間：103 sec
+紅方時間：69 sec
+Turn R
+請輸入要移動的紅棋之row(0為悔棋):4
+請輸入要移動的紅棋之col:5
+請輸入要放置的位置(row,col):3 5
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:23:34
+藍方時間：103 sec
+紅方時間：96 sec
+Turn R
+違反遊戲規則，請重新輸入
+請輸入要移動的紅棋之row(0為悔棋):4 
+請輸入要移動的紅棋之col:1
+請輸入要放置的位置(row,col):5 1
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:24:15
+藍方時間：144 sec
+紅方時間：96 sec
+Turn B
+請輸入要移動的藍棋之row(0為悔棋):4 
+請輸入要移動的藍棋之yi:5
+請輸入要放置的位置(xj,yj):3 5
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:24:35
+藍方時間：164 sec
+紅方時間：96 sec
+Turn R
+請輸入要移動的紅棋之row(0為悔棋):5 
+請輸入要移動的紅棋之col:1
+請輸入要放置的位置(row,col):6 1
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:25:12
+藍方時間：164 sec
+紅方時間：133 sec
+Turn B
+請輸入要移動的藍棋之row(0為悔棋):3
+請輸入要移動的藍棋之yi:4
+請輸入要放置的位置(xj,yj):2 4
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:25:48
+藍方時間：200 sec
+紅方時間：133 sec
+Turn B
+違反遊戲規則，請重新輸入
+請輸入要移動的藍棋之row(0為悔棋):3
+請輸入要移動的藍棋之yi:5
+請輸入要放置的位置(xj,yj):2 5
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:26:23
+藍方時間：200 sec
+紅方時間：168 sec
+Turn R
+請輸入要移動的紅棋之row(0為悔棋):6
+請輸入要移動的紅棋之col:1
+請輸入要放置的位置(row,col):7 1
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:27:37
+藍方時間：200 sec
+紅方時間：242 sec
+Turn B
+請輸入要移動的藍棋之row(0為悔棋):2
+請輸入要移動的藍棋之yi:5
+請輸入要放置的位置(xj,yj):1 5
+
+呈現棋盤目前狀態
+Now is 2023/01/10 22:28:03
+藍方時間：226 sec
+紅方時間：242 sec
+藍棋玩家獲勝

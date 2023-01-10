@@ -154,28 +154,21 @@ int main(int argc,char *argv[]){
 		//開始下棋
 		turn =-1;
 		while(gameOverSign){
-			//printf("top %d \n",top);
 			isStandard =1;
 			turn *=-1;//雙方交替下棋
 			regret = 0;
 			switch(turn){
 				case 1:
 					ev_timer_init(&timeB, gettime_B, 1, 1);
-					//ev_timer_init(&timeR, gettime_B, 1, 1);
 					ev_timer_start(loopB, &timeB);
 					showTime();
     				ev_run(loopB, 0);
-					//bluemove();
-					//turn = (restart)?(turn*-1):turn;
 					break;
 				case -1:
 					ev_timer_init(&timeR, gettime_R, 1, 1);
-					//ev_timer_init(&timeR, gettime_B, 1, 1);
 					ev_timer_start(loopR, &timeR);
 					showTime();
     				ev_run(loopR, 0);
-					//redmove();
-					//turn=(restart)?(turn*-1):turn;
 					break;
 			}
 			isGameOver();
@@ -194,12 +187,12 @@ int main(int argc,char *argv[]){
 
 			}*/
 			while(head != NULL){
-				//printf("x1 %d\n", head->x1);
 				fprintf(fptr,"%d %d %d %d %s %s\n",head->x1,head->y1,head->x2,head->y2,head->p0,head->p1);
 				head = head->next;
 			}
 		}
 		fprintf(fptr,"%c", SBL);
+		
 		//load
 		if(load){
 		fseek(fptr, SEEK_SET, 0);
