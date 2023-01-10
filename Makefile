@@ -1,4 +1,4 @@
-CC := gcc
+﻿CC := gcc
 SRCDIR := src
 BUILDDIR := build
 TARGET := bin/run
@@ -11,24 +11,24 @@ LIB := -L lib
 INC := -I inc
 
 $(TARGET): $(OBJECTS)
- @echo " Linking..."
- @echo " $(CC) $^ -o $(TARGET) $(LIB)"; $(CC) $^ -o $(TARGET) $(LIB) -O0 -lm -lev
+	@echo " Linking..."
+	@echo " $(CC) $^ -o $(TARGET) $(LIB)"; $(CC) $^ -o $(TARGET) $(LIB) -O0 -lm -lev
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
- @echo " Building..."
- @mkdir -p $(BUILDDIR)
- @echo " $(CC) $(CFLAGS) $(INC) -c -o $@ $<"; $(CC) $(CFLAGS) $(INC) -c -o $@ $<
+	@echo " Building..."
+	@mkdir -p $(BUILDDIR)
+	@echo " $(CC) $(CFLAGS) $(INC) -c -o $@ $<"; $(CC) $(CFLAGS) $(INC) -c -o $@ $<
 
 clean:
- @echo " Cleaning...";
- @echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR) $(TARGET)
+	@echo " Cleaning..."; 
+	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR) $(TARGET)
 
 # Tests
 tester:
- $(CC) $(CFLAGS) test/tester.c $(INC) $(LIB) -o bin/tester
+	$(CC) $(CFLAGS) test/tester.c $(INC) $(LIB) -o bin/tester
 
 # Spikes
 ticket:
- $(CC) $(CFLAGS) spikes/ticket.c $(INC) $(LIB) -o bin/ticket
+	$(CC) $(CFLAGS) spikes/ticket.c $(INC) $(LIB) -o bin/ticket
 
 .PHONY: clean

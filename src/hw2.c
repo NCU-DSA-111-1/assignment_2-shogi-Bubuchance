@@ -222,7 +222,6 @@ int main(int argc,char *argv[]){
 					stack[top].x2 = str[0]-'0';
 				if(i == 3)
 					stack[top].y2 = str[0]-'0';
-				//printf("%d %s\n",i, str);
 				++i;
 			}
 			else{
@@ -248,10 +247,10 @@ int main(int argc,char *argv[]){
 			}  
 			//printf("%d %s\n",i, str);   	
     	}
-		printf("count %d \n", count);
-		for(top=0;top<count;top++){
+		//printf("count %d \n", count);
+		/*for(top=0;top<count;top++){
 			printf("step %d : %d %d %d %d %s %s \n",top+1, (stack[top].x1),(stack[top].y1),(stack[top].x2),(stack[top].y2),(stack[top].p1),(stack[top].p0));
-		}
+		}*/
 		InitGame();
 		PrintChess();
 		int data=top;//暫存棋盤筆數
