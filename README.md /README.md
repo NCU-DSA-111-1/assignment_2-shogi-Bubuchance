@@ -5,12 +5,12 @@
 
 ## Compile
 * Download libev
-    * sudo apt-get update
-    * sudo apt-get install libev-dev
+    sudo apt-get update
+    sudo apt-get install libev-dev
 * compile
-    * cd assignment_2-shogi-Bubuchance
-    * cd src
-* gcc hw2.c -lev -o hw2
+    cd assignment_2-shogi-Bubuchance
+    cd src
+    gcc hw2.c -lev -o hw2
 ## Run
 ### Open a new game
     ./hw2 [-n][-s newfile]
