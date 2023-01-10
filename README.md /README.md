@@ -4,10 +4,10 @@
 
 
 ## Compile
-* Download libev
+### Download libev
     sudo apt-get update
     sudo apt-get install libev-dev
-* compile
+### compile
     cd assignment_2-shogi-Bubuchance
     cd src
     gcc hw2.c -lev -o hw2
